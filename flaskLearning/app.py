@@ -41,7 +41,8 @@ def submit():
         dealer = request.form['dealer']
         rating = request.form['rating']
         comments = request.form['comments']
-        #print(customer,dealer,rating,comments)
+        print(customer,dealer,rating,comments)
+
         if customer == '' or dealer == '':
             print('test')
             return render_template('index.html',message='Please enter required fields')
